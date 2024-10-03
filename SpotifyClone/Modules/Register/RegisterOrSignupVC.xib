@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterOrSignupVC" customModule="SpotifyClone" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="registerOrSignup" translatesAutoresizingMaskIntoConstraints="NO" id="Xxy-0q-AfQ">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpotifyIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Kuk-GB-nCV">
+                    <rect key="frame" x="79" y="203.33333333333334" width="235" height="71.000000000000028"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="NhK-sO-1IP"/>
+                        <constraint firstAttribute="width" constant="235" id="caI-er-fux"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bX5-ke-N5V">
+                    <rect key="frame" x="30" y="329.33333333333331" width="333" height="193.66666666666669"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tBR-32-eG6">
+                            <rect key="frame" x="19" y="0.0" width="295" height="90.666666666666671"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enjoy Listening To Music" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpA-2Q-lkw">
+                                    <rect key="frame" x="0.0" y="0.0" width="295" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spotify is a proprietary Swedish audio streaming and media services provider" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqd-r9-BBI">
+                                    <rect key="frame" x="0.0" y="50" width="295" height="40.666666666666657"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ee8-8T-bdr">
+                            <rect key="frame" x="20" y="120.66666666666669" width="293" height="73"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grW-1h-VMc">
+                                    <rect key="frame" x="0.0" y="0.0" width="136.66666666666666" height="73"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Register" cornerStyle="capsule">
+                                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="baseBackgroundColor" name="AccentColor"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didRegisterBtnClick:" destination="-1" eventType="touchUpInside" id="4UY-4o-blV"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hO8-Se-2Ij">
+                                    <rect key="frame" x="156.66666666666663" y="0.0" width="136.33333333333337" height="73"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Sign in">
+                                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didSignInBtnClick:" destination="-1" eventType="touchUpInside" id="e2d-SG-n7E"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="73" id="Kui-z6-1t5"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Ee8-8T-bdr" firstAttribute="leading" secondItem="bX5-ke-N5V" secondAttribute="leading" constant="20" id="7Fz-Rb-XiQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Ee8-8T-bdr" secondAttribute="trailing" constant="20" id="jCY-1O-p0Y"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bX5-ke-N5V" firstAttribute="top" secondItem="Kuk-GB-nCV" secondAttribute="bottom" constant="55" id="D7P-CU-OgR"/>
+                <constraint firstItem="bX5-ke-N5V" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="K1W-zh-HLO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bX5-ke-N5V" secondAttribute="trailing" constant="30" id="XHN-jM-6RA"/>
+                <constraint firstItem="bX5-ke-N5V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="YCx-mg-QDG"/>
+                <constraint firstItem="Kuk-GB-nCV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yop-8e-hKW"/>
+                <constraint firstAttribute="bottom" secondItem="Xxy-0q-AfQ" secondAttribute="bottom" id="jQB-fC-kpD"/>
+                <constraint firstItem="Xxy-0q-AfQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qgZ-nb-hxp"/>
+                <constraint firstItem="Xxy-0q-AfQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="y71-B5-Un7"/>
+                <constraint firstItem="Xxy-0q-AfQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yXn-mb-DAq"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SpotifyIcon" width="196" height="59"/>
+        <image name="registerOrSignup" width="130" height="281.33334350585938"/>
+        <namedColor name="AccentColor">
+            <color red="0.25882352941176467" green="0.78431372549019607" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
