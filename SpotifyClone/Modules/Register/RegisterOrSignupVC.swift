@@ -14,6 +14,7 @@ class RegisterOrSignupVC: UIViewController {
     }
 
     @IBAction func didRegisterBtnClick(_ sender: Any) {
+        
     }
     
     @IBAction func didSignInBtnClick(_ sender: Any) {

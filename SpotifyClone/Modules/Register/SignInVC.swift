@@ -9,24 +9,27 @@ import UIKit
 
 class SignInVC: UIViewController {
 
+    @IBOutlet weak var topConstraint: NSLayoutConstraint!
+    @IBOutlet var heightConstraints: [NSLayoutConstraint]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        uiSetup()
+    }
 
-        // Do any additional setup after loading the view.
+    
+    private func uiSetup() {
+        let deviceSize = DeviceHelper.getMobileDeviceSizeCategory()
+        if deviceSize == .small {
+            topConstraint.constant = 20.0
+            heightConstraints.forEach { constraint in
+                constraint.constant = 60
+            }
+        }
     }
 
     @IBAction func didBackBtnClick(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
