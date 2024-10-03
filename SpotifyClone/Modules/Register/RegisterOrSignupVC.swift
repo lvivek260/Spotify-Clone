@@ -14,7 +14,7 @@ class RegisterOrSignupVC: UIViewController {
     }
 
     @IBAction func didRegisterBtnClick(_ sender: Any) {
-        
+        navigationController?.pushViewController(RegisterVC(), animated: true)
     }
     
     @IBAction func didSignInBtnClick(_ sender: Any) {

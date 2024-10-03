@@ -24,6 +24,8 @@
 		1889E3E62CAEA3A3004BBF12 /* CustomTextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889E3E52CAEA3A3004BBF12 /* CustomTextfieldView.swift */; };
 		1889E3E82CAEA3B3004BBF12 /* CustomTextfieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1889E3E72CAEA3B3004BBF12 /* CustomTextfieldView.xib */; };
 		1889E3EA2CAEBDE7004BBF12 /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889E3E92CAEBDE7004BBF12 /* DeviceHelper.swift */; };
+		1889E3ED2CAEC91F004BBF12 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889E3EB2CAEC91F004BBF12 /* RegisterVC.swift */; };
+		1889E3EE2CAEC91F004BBF12 /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1889E3EC2CAEC91F004BBF12 /* RegisterVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		1889E3E52CAEA3A3004BBF12 /* CustomTextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfieldView.swift; sourceTree = "<group>"; };
 		1889E3E72CAEA3B3004BBF12 /* CustomTextfieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextfieldView.xib; sourceTree = "<group>"; };
 		1889E3E92CAEBDE7004BBF12 /* DeviceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHelper.swift; sourceTree = "<group>"; };
+		1889E3EB2CAEC91F004BBF12 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		1889E3EC2CAEC91F004BBF12 /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,8 @@
 				1889E3DD2CAE8C72004BBF12 /* RegisterOrSignupVC.xib */,
 				1889E3E02CAE91D5004BBF12 /* SignInVC.swift */,
 				1889E3E12CAE91D5004BBF12 /* SignInVC.xib */,
+				1889E3EB2CAEC91F004BBF12 /* RegisterVC.swift */,
+				1889E3EC2CAEC91F004BBF12 /* RegisterVC.xib */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 				1889E3C22CAE668D004BBF12 /* LaunchScreen.storyboard in Resources */,
 				1889E3DA2CAE72F3004BBF12 /* OnboardingSecondVC.xib in Resources */,
 				1889E3DF2CAE8C72004BBF12 /* RegisterOrSignupVC.xib in Resources */,
+				1889E3EE2CAEC91F004BBF12 /* RegisterVC.xib in Resources */,
 				1889E3BF2CAE668D004BBF12 /* Assets.xcassets in Resources */,
 				1889E3D62CAE6C1F004BBF12 /* OnboardingFirstVC.xib in Resources */,
 				1889E3BA2CAE6678004BBF12 /* Main.storyboard in Resources */,
@@ -281,6 +288,7 @@
 				1889E3E22CAE91D5004BBF12 /* SignInVC.swift in Sources */,
 				1889E3D52CAE6C1F004BBF12 /* OnboardingFirstVC.swift in Sources */,
 				1889E3B52CAE6678004BBF12 /* SceneDelegate.swift in Sources */,
+				1889E3ED2CAEC91F004BBF12 /* RegisterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
