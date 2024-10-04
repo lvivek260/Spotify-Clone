@@ -12,6 +12,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var contentTitleCollection: UICollectionView!
     @IBOutlet weak var musicCollectionView: UICollectionView!
     @IBOutlet weak var musicListTableView: UITableView!
+    @IBOutlet weak var musicListHeight: NSLayoutConstraint!
     
     let viewModel: HomeViewModelProtocol = HomeViewModel()
     
@@ -42,6 +43,7 @@ class HomeVC: UIViewController {
     
     private func tableViewSetup() {
         musicListTableView.dataSource = self
+        musicListTableView.delegate = self
         musicListTableView.register(MusicListCell.nib, forCellReuseIdentifier: MusicListCell.id)
     }
    
@@ -116,6 +118,15 @@ extension HomeVC: UITableViewDataSource {
             return MusicListCell()
         }
         return cell
+    }
+}
+
+extension HomeVC: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+            self.musicListHeight.constant = self.musicListTableView.contentSize.height
+        }
     }
 }
 
