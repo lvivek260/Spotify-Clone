@@ -135,6 +135,9 @@
                                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <color key="baseBackgroundColor" name="AccentColor"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didSignInBtnClick:" destination="-1" eventType="touchUpInside" id="uqR-6q-ucz"/>
+                                    </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ANV-zk-8uC">
                                     <rect key="frame" x="0.0" y="338.00000000000006" width="337" height="168.66666666666669"/>

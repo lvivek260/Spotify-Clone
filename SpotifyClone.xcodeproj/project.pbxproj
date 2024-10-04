@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186E81152CAFE02F00D1FBED /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186E81132CAFE02F00D1FBED /* HomeVC.swift */; };
+		186E81162CAFE02F00D1FBED /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186E81142CAFE02F00D1FBED /* HomeVC.xib */; };
+		186E811C2CAFE19900D1FBED /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186E811A2CAFE19900D1FBED /* SettingVC.swift */; };
+		186E811D2CAFE19900D1FBED /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186E811B2CAFE19900D1FBED /* SettingVC.xib */; };
+		186E81202CAFE1B200D1FBED /* LikeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186E811E2CAFE1B200D1FBED /* LikeVC.swift */; };
+		186E81212CAFE1B200D1FBED /* LikeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186E811F2CAFE1B200D1FBED /* LikeVC.xib */; };
+		186E81242CAFE1CB00D1FBED /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186E81222CAFE1CB00D1FBED /* ProfileVC.swift */; };
+		186E81252CAFE1CB00D1FBED /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186E81232CAFE1CB00D1FBED /* ProfileVC.xib */; };
+		18708CB72CAFD3340054780C /* ColorConstants .swift in Sources */ = {isa = PBXBuildFile; fileRef = 18708CB62CAFD3340054780C /* ColorConstants .swift */; };
+		1870A2B02CAFC0C10039DCCB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870A2AF2CAFC0C10039DCCB /* TabBarController.swift */; };
+		1870A2B22CAFC20A0039DCCB /* ImageConstants .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870A2B12CAFC20A0039DCCB /* ImageConstants .swift */; };
+		1870A2B42CAFCB610039DCCB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870A2B32CAFCB600039DCCB /* UIViewController+Extension.swift */; };
 		1889E3B32CAE6678004BBF12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889E3B22CAE6678004BBF12 /* AppDelegate.swift */; };
 		1889E3B52CAE6678004BBF12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889E3B42CAE6678004BBF12 /* SceneDelegate.swift */; };
 		1889E3BA2CAE6678004BBF12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1889E3B82CAE6678004BBF12 /* Main.storyboard */; };
@@ -29,6 +41,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		186E81132CAFE02F00D1FBED /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		186E81142CAFE02F00D1FBED /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		186E811A2CAFE19900D1FBED /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		186E811B2CAFE19900D1FBED /* SettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
+		186E811E2CAFE1B200D1FBED /* LikeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeVC.swift; sourceTree = "<group>"; };
+		186E811F2CAFE1B200D1FBED /* LikeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeVC.xib; sourceTree = "<group>"; };
+		186E81222CAFE1CB00D1FBED /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		186E81232CAFE1CB00D1FBED /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		18708CB62CAFD3340054780C /* ColorConstants .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorConstants .swift"; sourceTree = "<group>"; };
+		1870A2AF2CAFC0C10039DCCB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		1870A2B12CAFC20A0039DCCB /* ImageConstants .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageConstants .swift"; sourceTree = "<group>"; };
+		1870A2B32CAFCB600039DCCB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		1889E3AF2CAE6678004BBF12 /* SpotifyClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1889E3B22CAE6678004BBF12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1889E3B42CAE6678004BBF12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +87,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186E810F2CAFDFD800D1FBED /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				186E81102CAFDFE900D1FBED /* Model */,
+				186E81112CAFDFF000D1FBED /* View */,
+				186E81122CAFDFF600D1FBED /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		186E81102CAFDFE900D1FBED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		186E81112CAFDFF000D1FBED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				186E81132CAFE02F00D1FBED /* HomeVC.swift */,
+				186E81142CAFE02F00D1FBED /* HomeVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		186E81122CAFDFF600D1FBED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		186E81172CAFE13600D1FBED /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				186E811A2CAFE19900D1FBED /* SettingVC.swift */,
+				186E811B2CAFE19900D1FBED /* SettingVC.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		186E81182CAFE14400D1FBED /* Likes */ = {
+			isa = PBXGroup;
+			children = (
+				186E811E2CAFE1B200D1FBED /* LikeVC.swift */,
+				186E811F2CAFE1B200D1FBED /* LikeVC.xib */,
+			);
+			path = Likes;
+			sourceTree = "<group>";
+		};
+		186E81192CAFE16100D1FBED /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				186E81222CAFE1CB00D1FBED /* ProfileVC.swift */,
+				186E81232CAFE1CB00D1FBED /* ProfileVC.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1870A2AE2CAFC08E0039DCCB /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				1870A2AF2CAFC0C10039DCCB /* TabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
 		1889E3A62CAE6678004BBF12 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +207,7 @@
 		1889E3CB2CAE6958004BBF12 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1870A2B32CAFCB600039DCCB /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -122,6 +215,8 @@
 		1889E3CC2CAE6968004BBF12 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				1870A2B12CAFC20A0039DCCB /* ImageConstants .swift */,
+				18708CB62CAFD3340054780C /* ColorConstants .swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -131,6 +226,11 @@
 			children = (
 				1889E3D12CAE6B73004BBF12 /* Onboarding */,
 				1889E3DB2CAE8B2F004BBF12 /* Register */,
+				1870A2AE2CAFC08E0039DCCB /* TabBarController */,
+				186E810F2CAFDFD800D1FBED /* Home */,
+				186E81172CAFE13600D1FBED /* Setting */,
+				186E81182CAFE14400D1FBED /* Likes */,
+				186E81192CAFE16100D1FBED /* Profile */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -267,8 +367,12 @@
 				1889E3BF2CAE668D004BBF12 /* Assets.xcassets in Resources */,
 				1889E3D62CAE6C1F004BBF12 /* OnboardingFirstVC.xib in Resources */,
 				1889E3BA2CAE6678004BBF12 /* Main.storyboard in Resources */,
+				186E81162CAFE02F00D1FBED /* HomeVC.xib in Resources */,
+				186E811D2CAFE19900D1FBED /* SettingVC.xib in Resources */,
+				186E81212CAFE1B200D1FBED /* LikeVC.xib in Resources */,
 				1889E3E32CAE91D5004BBF12 /* SignInVC.xib in Resources */,
 				1889E3E82CAEA3B3004BBF12 /* CustomTextfieldView.xib in Resources */,
+				186E81252CAFE1CB00D1FBED /* ProfileVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,15 +384,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				1889E3BD2CAE6678004BBF12 /* SpotifyClone.xcdatamodeld in Sources */,
+				186E811C2CAFE19900D1FBED /* SettingVC.swift in Sources */,
+				1870A2B42CAFCB610039DCCB /* UIViewController+Extension.swift in Sources */,
 				1889E3B32CAE6678004BBF12 /* AppDelegate.swift in Sources */,
+				1870A2B02CAFC0C10039DCCB /* TabBarController.swift in Sources */,
 				1889E3DE2CAE8C72004BBF12 /* RegisterOrSignupVC.swift in Sources */,
 				1889E3E62CAEA3A3004BBF12 /* CustomTextfieldView.swift in Sources */,
+				186E81152CAFE02F00D1FBED /* HomeVC.swift in Sources */,
+				186E81202CAFE1B200D1FBED /* LikeVC.swift in Sources */,
 				1889E3EA2CAEBDE7004BBF12 /* DeviceHelper.swift in Sources */,
 				1889E3D92CAE72F3004BBF12 /* OnboardingSecondVC.swift in Sources */,
 				1889E3E22CAE91D5004BBF12 /* SignInVC.swift in Sources */,
+				186E81242CAFE1CB00D1FBED /* ProfileVC.swift in Sources */,
+				18708CB72CAFD3340054780C /* ColorConstants .swift in Sources */,
 				1889E3D52CAE6C1F004BBF12 /* OnboardingFirstVC.swift in Sources */,
 				1889E3B52CAE6678004BBF12 /* SceneDelegate.swift in Sources */,
 				1889E3ED2CAEC91F004BBF12 /* RegisterVC.swift in Sources */,
+				1870A2B22CAFC20A0039DCCB /* ImageConstants .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

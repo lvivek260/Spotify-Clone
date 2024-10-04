@@ -32,4 +32,11 @@ class SignInVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func didSignInBtnClick(_ sender: Any) {
+        if let window = self.getWindow() {
+            window.rootViewController = TabBarController()
+            window.makeKeyAndVisible()
+        }
+    }
+    
 }
