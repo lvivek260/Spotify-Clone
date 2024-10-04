@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TitleCollectionCell" id="gTV-IL-0wX" customClass="TitleCollectionCell" customModule="SpotifyClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="164" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="164" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vod-Pz-pjP">
+                        <rect key="frame" x="0.0" y="0.0" width="164" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaH-MZ-d0s">
+                                <rect key="frame" x="57" y="0.0" width="50" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zpe-Sj-JAM">
+                                <rect key="frame" x="62" y="65.666666666666671" width="40" height="2.9999999999999858"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="jlx-RL-tQv"/>
+                                    <constraint firstAttribute="height" constant="6" id="p4a-Ef-WyI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vod-Pz-pjP" secondAttribute="trailing" id="18f-5v-9NJ"/>
+                <constraint firstItem="vod-Pz-pjP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bAQ-jM-js5"/>
+                <constraint firstAttribute="bottom" secondItem="vod-Pz-pjP" secondAttribute="bottom" id="jCC-jx-yGk"/>
+                <constraint firstItem="vod-Pz-pjP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lMA-d4-6EB"/>
+            </constraints>
+            <size key="customSize" width="164" height="70"/>
+            <connections>
+                <outlet property="lblTitle" destination="WaH-MZ-d0s" id="T66-dL-2F5"/>
+                <outlet property="selectionImg" destination="zpe-Sj-JAM" id="oEb-qP-dvX"/>
+            </connections>
+            <point key="canvasLocation" x="114.50381679389312" y="26.760563380281692"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="square.fill" catalog="system" width="128" height="114"/>
+        <namedColor name="AccentColor">
+            <color red="0.25900000333786011" green="0.7839999794960022" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
