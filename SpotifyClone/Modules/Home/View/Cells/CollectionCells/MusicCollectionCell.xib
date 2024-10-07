@@ -21,16 +21,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="293" height="286"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmp-qu-PSL">
-                                <rect key="frame" x="0.0" y="0.0" width="293" height="195"/>
+                                <rect key="frame" x="0.0" y="0.0" width="293" height="185"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musicTemp" translatesAutoresizingMaskIntoConstraints="NO" id="BlS-MJ-lRU">
-                                        <rect key="frame" x="0.0" y="0.0" width="293" height="185"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="175"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="185" id="ZGV-yX-9ij"/>
+                                            <constraint firstAttribute="height" constant="175" id="ZGV-yX-9ij"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musicIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Fnq-le-A61">
-                                        <rect key="frame" x="254" y="166" width="29" height="29"/>
+                                        <rect key="frame" x="254" y="156" width="29" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="29" id="KpA-3g-Gok"/>
                                             <constraint firstAttribute="width" secondItem="Fnq-le-A61" secondAttribute="height" multiplier="1:1" id="suP-mh-DVQ"/>

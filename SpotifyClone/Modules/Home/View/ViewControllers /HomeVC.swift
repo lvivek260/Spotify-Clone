@@ -9,13 +9,15 @@ import UIKit
 
 class HomeVC: UIViewController {
     
+// MARK: - IBOutlets
     @IBOutlet weak var contentTitleCollection: UICollectionView!
     @IBOutlet weak var musicCollectionView: UICollectionView!
     @IBOutlet weak var musicListTableView: UITableView!
     @IBOutlet weak var musicListHeight: NSLayoutConstraint!
     
-    let viewModel: HomeViewModelProtocol = HomeViewModel()
+    var viewModel: HomeViewModelProtocol?
     
+// MARK: - View Live Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
@@ -23,6 +25,7 @@ class HomeVC: UIViewController {
         tableViewSetup()
     }
     
+// MARK: - Configurations Methods
     private func collectionViewSetup() {
         //Title Collection View Configuration
         contentTitleCollection.delegate = self
@@ -49,10 +52,11 @@ class HomeVC: UIViewController {
    
 }
 
+// MARK: - Collection view Data Source Methods
 extension HomeVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView {
-        case contentTitleCollection : return viewModel.titles.count
+        case contentTitleCollection : return viewModel?.titles.count ?? 0
         case musicCollectionView : return 10
         default: return 0
         }
@@ -64,7 +68,7 @@ extension HomeVC: UICollectionViewDataSource {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TitleCollectionCell.id, for: indexPath) as? TitleCollectionCell else {
                 return TitleCollectionCell()
             }
-            cell.lblTitle.text = viewModel.titles[indexPath.row]
+            cell.lblTitle.text = viewModel?.titles[indexPath.row] ?? ""
             return cell
             
         case musicCollectionView :
@@ -77,13 +81,14 @@ extension HomeVC: UICollectionViewDataSource {
     }
 }
 
+// MARK: - Collection view Delegate and Flow Layout Methods
 extension HomeVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let height = collectionView.frame.height
         
         switch collectionView {
         case contentTitleCollection :
-            let title = viewModel.titles[indexPath.row]
+            let title = viewModel?.titles[indexPath.row] ?? ""
             let width = title.width(usingFont: UIFont.systemFont(ofSize: 20.0, weight: .semibold))
             return CGSize(width: width + 10.0, height: height)
             
@@ -107,20 +112,22 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     }
 }
 
-
+// MARK: - TableView Data Source Methods
 extension HomeVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel?.songs.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = musicListTableView.dequeueReusableCell(withIdentifier: MusicListCell.id, for: indexPath) as? MusicListCell else {
             return MusicListCell()
         }
+        cell.song = viewModel?.songs[indexPath.row]
         return cell
     }
 }
 
+// MARK: - TableView Delegate Methods
 extension HomeVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

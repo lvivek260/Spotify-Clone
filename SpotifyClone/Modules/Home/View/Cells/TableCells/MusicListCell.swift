@@ -9,10 +9,19 @@ import UIKit
 
 class MusicListCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+// MARK: - IBOutlets
+    @IBOutlet weak var lblSongName: UILabel!
+    @IBOutlet weak var lblArtist: UILabel!
+    @IBOutlet weak var lblDuration: UILabel!
+    
+// MARK: - Data Binding
+    var song: Song? {
+        didSet {
+            guard let song else { return }
+            lblSongName.text = song.title
+            lblArtist.text = song.artist
+            lblDuration.text = song.duration
+        }
     }
-
     
 }

@@ -82,6 +82,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblArtist" destination="Yo9-fe-ONR" id="IUK-pm-PpA"/>
+                <outlet property="lblDuration" destination="LjM-lh-EgV" id="W0X-Qf-r4N"/>
+                <outlet property="lblSongName" destination="6Oi-xb-Zrm" id="7y5-1V-nay"/>
+            </connections>
             <point key="canvasLocation" x="440.45801526717554" y="61.267605633802823"/>
         </tableViewCell>
     </objects>

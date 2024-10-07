@@ -24,7 +24,7 @@ class TabBarController: UITabBarController {
     }
     
     private func configureViewController() {
-        let homeVC = UINavigationController(rootViewController: HomeVC())
+        let homeVC = UINavigationController(rootViewController: HomeBuilder().navigate())
         let settingVC = UINavigationController(rootViewController: SettingVC())
         let likeVC = UINavigationController(rootViewController: LikeVC())
         let profileVC  = UINavigationController(rootViewController: ProfileVC())
