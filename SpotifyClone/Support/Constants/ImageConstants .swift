@@ -5,7 +5,7 @@
 //  Created by Neosoft on 04/10/24.
 //
 
-import UIKit
+import Foundation
 
 enum ImageConstants: String  {
     //tab bar Images
@@ -17,12 +17,8 @@ enum ImageConstants: String  {
     case tabProfileNotSelected = "notSelectProfile"
     case tabSettingSelected 
     case tabSettingNotSelected = "notSelectSetting"
-    
+    //other
     case spotifyIcon = "SpotifyIcon"
     case search = "search"
     case menu = "menu"
-    
-    func image() -> UIImage? {
-        return UIImage(named: self.rawValue)
-    }
 }

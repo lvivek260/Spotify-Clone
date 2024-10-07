@@ -30,17 +30,17 @@ class TabBarController: UITabBarController {
         let profileVC  = UINavigationController(rootViewController: ProfileVC())
         
         homeVC.tabBarItem = .init(title: nil,
-                                 image: ImageConstants.tabHomeNotSelected.image(),
-                                 selectedImage: ImageConstants.tabHomeSelected.image())
+                                  image: UIImage(name: .tabHomeNotSelected),
+                          selectedImage: UIImage(name: .tabHomeSelected))
         settingVC.tabBarItem = .init(title: nil,
-                                  image: ImageConstants.tabSettingNotSelected.image(),
-                                  tag: 1)
+                                     image: UIImage(name: .tabSettingNotSelected),
+                                       tag: 1)
         likeVC.tabBarItem = .init(title: nil,
-                                 image: ImageConstants.tabLikeNotSelected.image(),
-                                 selectedImage: ImageConstants.tabLikeSelected.image())
+                                  image: UIImage(name: .tabLikeNotSelected),
+                          selectedImage: UIImage(name: .tabLikeSelected))
         profileVC.tabBarItem = .init(title: nil,
-                                  image: ImageConstants.tabProfileNotSelected.image(),
-                                  tag: 3)
+                                     image: UIImage(name: .tabProfileNotSelected),
+                                       tag: 3)
         
         self.viewControllers = [homeVC, settingVC, likeVC, profileVC]
     }

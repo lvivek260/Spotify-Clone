@@ -139,7 +139,9 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
             animateSelectionBar(to: indexPath)
             
         case musicCollectionView :
-            navigationController?.pushViewController(ArtistVC(), animated: true)
+            let artistVC = ArtistVC()
+            artistVC.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(artistVC, animated: true)
         default: break
         }
     }
@@ -167,6 +169,12 @@ extension HomeVC: UITableViewDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
             self.musicListHeight.constant = self.musicListTableView.contentSize.height
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nowPlayingVC = NowPlayingVC()
+        nowPlayingVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(nowPlayingVC, animated: true)
     }
 }
 

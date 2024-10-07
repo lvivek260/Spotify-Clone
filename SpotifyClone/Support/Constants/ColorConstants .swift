@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CustomColors: String {
+enum ColorConstants: String {
     case customBackground = "customBackground"
     case tabBarBackground = "tabBarBackground"
     case accentColor = "AccentColor"
