@@ -15,17 +15,43 @@ class HomeVC: UIViewController {
     @IBOutlet weak var musicListTableView: UITableView!
     @IBOutlet weak var musicListHeight: NSLayoutConstraint!
     
+    let selectionBarView = UIView()
+    
     var viewModel: HomeViewModelProtocol?
     
 // MARK: - View Live Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = true
         collectionViewSetup()
         tableViewSetup()
+        animationViewSetup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
     }
     
 // MARK: - Configurations Methods
+    private func animationViewSetup() {
+        selectionBarView.backgroundColor = UIColor(name: .accentColor)
+        selectionBarView.frame.size.height = 3
+        selectionBarView.frame.size.width = 60
+        selectionBarView.frame.origin.y = contentTitleCollection.frame.height - selectionBarView.frame.size.height
+        contentTitleCollection.addSubview(selectionBarView)
+    }
+    
+    func animateSelectionBar(to indexPath: IndexPath) {
+        guard let cell = contentTitleCollection.cellForItem(at: indexPath) else { return }
+        UIView.animate(withDuration: 0.3) {
+            self.selectionBarView.frame.size.width = cell.frame.width
+            self.selectionBarView.frame.origin.x = cell.frame.origin.x
+        }
+    }
+    
     private func collectionViewSetup() {
         //Title Collection View Configuration
         contentTitleCollection.delegate = self
@@ -108,7 +134,14 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        switch collectionView {
+        case contentTitleCollection :
+            animateSelectionBar(to: indexPath)
+            
+        case musicCollectionView :
+            navigationController?.pushViewController(ArtistVC(), animated: true)
+        default: break
+        }
     }
 }
 

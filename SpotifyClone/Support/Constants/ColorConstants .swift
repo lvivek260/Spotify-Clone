@@ -5,13 +5,10 @@
 //  Created by Neosoft on 04/10/24.
 //
 
-import UIKit
+import Foundation
 
-enum ColorConstants: String {
+enum CustomColors: String {
     case customBackground = "customBackground"
     case tabBarBackground = "tabBarBackground"
-    
-    func color() -> UIColor? {
-        return UIColor(named: self.rawValue)
-    }
+    case accentColor = "AccentColor"
 }

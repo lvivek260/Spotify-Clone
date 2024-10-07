@@ -30,6 +30,11 @@
 		1870A2B42CAFCB610039DCCB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870A2B32CAFCB600039DCCB /* UIViewController+Extension.swift */; };
 		187585792CB3BAE000D79781 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187585782CB3BAE000D79781 /* HomeBuilder.swift */; };
 		1875857B2CB3C04C00D79781 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875857A2CB3C04C00D79781 /* SongModel.swift */; };
+		1875857F2CB3D49A00D79781 /* ArtistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875857D2CB3D49A00D79781 /* ArtistVC.swift */; };
+		187585802CB3D49A00D79781 /* ArtistVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1875857E2CB3D49A00D79781 /* ArtistVC.xib */; };
+		187585832CB3E0C000D79781 /* AlbumsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187585812CB3E0BF00D79781 /* AlbumsCollectionViewCell.swift */; };
+		187585842CB3E0C000D79781 /* AlbumsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187585822CB3E0C000D79781 /* AlbumsCollectionViewCell.xib */; };
+		187585862CB3F2E900D79781 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187585852CB3F2E900D79781 /* UIColor+Extension.swift */; };
 		1889E3B32CAE6678004BBF12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889E3B22CAE6678004BBF12 /* AppDelegate.swift */; };
 		1889E3B52CAE6678004BBF12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889E3B42CAE6678004BBF12 /* SceneDelegate.swift */; };
 		1889E3BA2CAE6678004BBF12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1889E3B82CAE6678004BBF12 /* Main.storyboard */; };
@@ -75,6 +80,11 @@
 		1870A2B32CAFCB600039DCCB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		187585782CB3BAE000D79781 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
 		1875857A2CB3C04C00D79781 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
+		1875857D2CB3D49A00D79781 /* ArtistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistVC.swift; sourceTree = "<group>"; };
+		1875857E2CB3D49A00D79781 /* ArtistVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistVC.xib; sourceTree = "<group>"; };
+		187585812CB3E0BF00D79781 /* AlbumsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCollectionViewCell.swift; sourceTree = "<group>"; };
+		187585822CB3E0C000D79781 /* AlbumsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumsCollectionViewCell.xib; sourceTree = "<group>"; };
+		187585852CB3F2E900D79781 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		1889E3AF2CAE6678004BBF12 /* SpotifyClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1889E3B22CAE6678004BBF12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1889E3B42CAE6678004BBF12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +236,17 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		1875857C2CB3D46300D79781 /* ArtistPage */ = {
+			isa = PBXGroup;
+			children = (
+				1875857D2CB3D49A00D79781 /* ArtistVC.swift */,
+				1875857E2CB3D49A00D79781 /* ArtistVC.xib */,
+				187585812CB3E0BF00D79781 /* AlbumsCollectionViewCell.swift */,
+				187585822CB3E0C000D79781 /* AlbumsCollectionViewCell.xib */,
+			);
+			path = ArtistPage;
+			sourceTree = "<group>";
+		};
 		1889E3A62CAE6678004BBF12 = {
 			isa = PBXGroup;
 			children = (
@@ -267,10 +288,10 @@
 		1889E3CA2CAE6935004BBF12 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				1889E3E42CAE99AD004BBF12 /* CustomItems  */,
-				1889E3CB2CAE6958004BBF12 /* Extensions */,
 				1889E3CC2CAE6968004BBF12 /* Constants */,
+				1889E3CB2CAE6958004BBF12 /* Extensions */,
 				1889E3D02CAE6A04004BBF12 /* Helper */,
+				1889E3E42CAE99AD004BBF12 /* CustomItems  */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -281,6 +302,7 @@
 				1870A2B32CAFCB600039DCCB /* UIViewController+Extension.swift */,
 				186E812E2CAFFB8200D1FBED /* Cell+Extension.swift */,
 				186E81302CB0053600D1FBED /* String+Extension.swift */,
+				187585852CB3F2E900D79781 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -304,6 +326,7 @@
 				186E81172CAFE13600D1FBED /* Setting */,
 				186E81182CAFE14400D1FBED /* Likes */,
 				186E81192CAFE16100D1FBED /* Profile */,
+				1875857C2CB3D46300D79781 /* ArtistPage */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -445,8 +468,10 @@
 				186E811D2CAFE19900D1FBED /* SettingVC.xib in Resources */,
 				186E81212CAFE1B200D1FBED /* LikeVC.xib in Resources */,
 				1889E3E32CAE91D5004BBF12 /* SignInVC.xib in Resources */,
+				187585842CB3E0C000D79781 /* AlbumsCollectionViewCell.xib in Resources */,
 				186E81352CB00DFA00D1FBED /* MusicCollectionCell.xib in Resources */,
 				1889E3E82CAEA3B3004BBF12 /* CustomTextfieldView.xib in Resources */,
+				187585802CB3D49A00D79781 /* ArtistVC.xib in Resources */,
 				186E81252CAFE1CB00D1FBED /* ProfileVC.xib in Resources */,
 				186E813F2CB0165500D1FBED /* MusicListCell.xib in Resources */,
 			);
@@ -477,7 +502,10 @@
 				186E81312CB0053600D1FBED /* String+Extension.swift in Sources */,
 				1889E3D92CAE72F3004BBF12 /* OnboardingSecondVC.swift in Sources */,
 				1889E3E22CAE91D5004BBF12 /* SignInVC.swift in Sources */,
+				1875857F2CB3D49A00D79781 /* ArtistVC.swift in Sources */,
+				187585862CB3F2E900D79781 /* UIColor+Extension.swift in Sources */,
 				1875857B2CB3C04C00D79781 /* SongModel.swift in Sources */,
+				187585832CB3E0C000D79781 /* AlbumsCollectionViewCell.swift in Sources */,
 				186E81242CAFE1CB00D1FBED /* ProfileVC.swift in Sources */,
 				186E812A2CAFFB1100D1FBED /* TitleCollectionCell.swift in Sources */,
 				18708CB72CAFD3340054780C /* ColorConstants .swift in Sources */,
