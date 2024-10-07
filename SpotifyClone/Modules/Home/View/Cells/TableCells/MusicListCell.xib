@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -58,8 +59,9 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JQR-c5-vrh">
-                                        <rect key="frame" x="81.666666666666686" y="-0.33333333333333215" width="21" height="20.666666666666664"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectedLike" translatesAutoresizingMaskIntoConstraints="NO" id="JQR-c5-vrh">
+                                        <rect key="frame" x="81.666666666666686" y="0.0" width="21" height="21"/>
+                                        <color key="tintColor" name="tabBarBackground"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="2lK-yw-ZlC"/>
                                             <constraint firstAttribute="width" constant="21" id="lj6-8V-gAe"/>
@@ -85,6 +87,9 @@
     </objects>
     <resources>
         <image name="musicIcon" width="37" height="37"/>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="selectedLike" width="28" height="28"/>
+        <namedColor name="tabBarBackground">
+            <color red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

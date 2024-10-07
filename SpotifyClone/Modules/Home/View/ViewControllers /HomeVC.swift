@@ -96,7 +96,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         switch collectionView {
-        case contentTitleCollection : return 10
+        case contentTitleCollection : return 20
         case musicCollectionView : return 7
         default: return 0
         }

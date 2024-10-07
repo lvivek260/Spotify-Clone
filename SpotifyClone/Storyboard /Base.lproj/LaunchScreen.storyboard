@@ -18,11 +18,15 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpotifyIcon" translatesAutoresizingMaskIntoConstraints="NO" id="SGk-6m-vfX">
                                 <rect key="frame" x="98.666666666666686" y="396.66666666666669" width="196" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SGk-6m-vfX" secondAttribute="height" multiplier="196:59" id="SNo-gk-ToW"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="SGk-6m-vfX" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.498728" id="3SU-bE-ial"/>
                             <constraint firstItem="SGk-6m-vfX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Arv-Ce-nSb"/>
                             <constraint firstItem="SGk-6m-vfX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="lKj-1Q-79R"/>
                         </constraints>
@@ -34,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SpotifyIcon" width="196" height="59"/>
+        <image name="SpotifyIcon" width="108" height="33"/>
     </resources>
 </document>

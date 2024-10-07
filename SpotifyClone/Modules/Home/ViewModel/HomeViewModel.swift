@@ -14,8 +14,8 @@ protocol HomeViewModelProtocol {
 final class HomeViewModel: HomeViewModelProtocol {
     let titles: [String] = [
         "News",
-        "Audio",
-        "Artist",
+        "Video",
+        "Artists",
         "Podcast",
         "Videos",
         "Playlists",
