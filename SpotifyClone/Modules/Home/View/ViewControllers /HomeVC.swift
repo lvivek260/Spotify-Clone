@@ -44,9 +44,10 @@ class HomeVC: UIViewController {
         contentTitleCollection.addSubview(selectionBarView)
     }
     
-    func animateSelectionBar(to indexPath: IndexPath) {
+    private func animateSelectionBar(to indexPath: IndexPath) {
         guard let cell = contentTitleCollection.cellForItem(at: indexPath) else { return }
-        UIView.animate(withDuration: 0.3) {
+        UIView.animate(withDuration: 0.3) { [weak self] in
+            guard let self else { return }
             self.selectionBarView.frame.size.width = cell.frame.width
             self.selectionBarView.frame.origin.x = cell.frame.origin.x
         }
@@ -58,16 +59,18 @@ class HomeVC: UIViewController {
         contentTitleCollection.dataSource = self
         contentTitleCollection.register(TitleCollectionCell.nib, forCellWithReuseIdentifier: TitleCollectionCell.id)
         
-        DispatchQueue.main.async {
-            let indexPath = IndexPath(item: 0, section: 0)
-            self.contentTitleCollection.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
-            self.collectionView(self.contentTitleCollection, didSelectItemAt: indexPath)
-        }
-        
         //Music Collection View Configuration
         musicCollectionView.delegate = self
         musicCollectionView.dataSource = self
         musicCollectionView.register(MusicCollectionCell.nib, forCellWithReuseIdentifier: MusicCollectionCell.id)
+        
+        //Select Default first cell
+        DispatchQueue.main.async { [weak self] in
+            guard let self else { return }
+            let indexPath = IndexPath(item: 0, section: 0)
+            self.contentTitleCollection.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
+            self.collectionView(self.contentTitleCollection, didSelectItemAt: indexPath)
+        }
     }
     
     private func tableViewSetup() {
@@ -142,6 +145,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
             let artistVC = ArtistVC()
             artistVC.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(artistVC, animated: true)
+            
         default: break
         }
     }

@@ -13,7 +13,8 @@ class TitleCollectionCell: UICollectionViewCell {
     
     override var isSelected: Bool {
         didSet {
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: 0.3) { [weak self] in
+                guard let self else { return }
                 self.lblTitle.textColor = self.isSelected ? .white : .lightGray
                 self.lblTitle.font = UIFont.systemFont(ofSize: 20.0, weight: self.isSelected ? .semibold : .medium)
             }

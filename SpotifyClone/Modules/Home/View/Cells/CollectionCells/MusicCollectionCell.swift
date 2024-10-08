@@ -9,9 +9,4 @@ import UIKit
 
 class MusicCollectionCell: UICollectionViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
 }

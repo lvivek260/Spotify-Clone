@@ -11,7 +11,12 @@ class ProfileVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        uiConfiguration()
+    }
+    
+    private func uiConfiguration() {
+        self.title = "Profile"
+        self.view.overrideUserInterfaceStyle = .dark
     }
 
 }

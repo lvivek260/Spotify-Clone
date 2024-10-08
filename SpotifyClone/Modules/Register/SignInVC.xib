@@ -228,11 +228,11 @@
                 <constraint firstItem="I6e-Td-6Db" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="jMu-bQ-Xy6"/>
                 <constraint firstItem="I6e-Td-6Db" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ycT-5a-ZPr"/>
             </constraints>
-            <point key="canvasLocation" x="127" y="20"/>
+            <point key="canvasLocation" x="473" y="18"/>
         </view>
     </objects>
     <resources>
-        <image name="SpotifyIcon" width="196" height="59"/>
+        <image name="SpotifyIcon" width="108" height="33"/>
         <image name="apple.logo" catalog="system" width="105" height="128"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="google" width="29" height="30"/>
