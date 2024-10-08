@@ -16,13 +16,15 @@ class TitleCollectionCell: UICollectionViewCell {
             UIView.animate(withDuration: 0.3) { [weak self] in
                 guard let self else { return }
                 self.lblTitle.textColor = self.isSelected ? .white : .lightGray
-                self.lblTitle.font = UIFont.systemFont(ofSize: 20.0, weight: self.isSelected ? .semibold : .medium)
+                self.lblTitle.font = UIFont.systemFont(ofSize: 20.0,
+                                                       weight: self.isSelected ? .semibold : .medium)
             }
         }
     }
     
     override func awakeFromNib() {
         lblTitle.textColor = isSelected ? .white : .lightGray
-        lblTitle.font = UIFont.systemFont(ofSize: 20.0, weight: isSelected ? .semibold : .medium)
+        lblTitle.font = UIFont.systemFont(ofSize: 20.0,
+                                          weight: isSelected ? .semibold : .medium)
     }
 }

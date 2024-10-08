@@ -27,7 +27,7 @@ class TabBarController: UITabBarController {
         let homeVC = UINavigationController(rootViewController: HomeBuilder().navigate())
         let settingVC = UINavigationController(rootViewController: SettingVC())
         let likeVC = UINavigationController(rootViewController: LikeVC())
-        let profileVC  = UINavigationController(rootViewController: ProfileVC())
+        let profileVC  = UINavigationController(rootViewController: ProfileBuilder().navigate())
         
         homeVC.tabBarItem = .init(title: nil,
                                   image: UIImage(name: .tabHomeNotSelected),
