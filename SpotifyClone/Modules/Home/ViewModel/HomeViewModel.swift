@@ -10,6 +10,7 @@ import Foundation
 protocol HomeViewModelProtocol {
     var titles: [String] { get }
     var songs: [Song] { get }
+    var musicData: [MusicModel] { get }
 }
 
 final class HomeViewModel: HomeViewModelProtocol {
@@ -43,5 +44,19 @@ final class HomeViewModel: HomeViewModelProtocol {
         Song(title: "Rolling in the Deep", artist: "Adele", duration: "3:48"),
         Song(title: "Old Town Road", artist: "Lil Nas X", duration: "2:37")
     ]
+    
+    let musicData: [MusicModel] = [
+        MusicModel(image: .musicTemp, artistName: "The Weeknd", songName: "Blinding Lights"),
+        MusicModel(image: .musicTemp1, artistName: "Dua Lipa", songName: "Levitating"),
+        MusicModel(image: .musicTemp, artistName: "Harry Styles", songName: "Watermelon Sugar"),
+        MusicModel(image: .musicTemp1, artistName: "Ed Sheeran", songName: "Shape of You"),
+        MusicModel(image: .musicTemp, artistName: "Justin Bieber", songName: "Peaches"),
+        MusicModel(image: .musicTemp1, artistName: "Billie Eilish", songName: "Bad Guy"),
+        MusicModel(image: .musicTemp, artistName: "Ariana Grande", songName: "7 rings"),
+        MusicModel(image: .musicTemp1, artistName: "Post Malone", songName: "Circles"),
+        MusicModel(image: .musicTemp, artistName: "Sia", songName: "Cheap Thrills"),
+        MusicModel(image: .musicTemp1, artistName: "Travis Scott", songName: "SICKO MODE")
+    ]
+
 
 }

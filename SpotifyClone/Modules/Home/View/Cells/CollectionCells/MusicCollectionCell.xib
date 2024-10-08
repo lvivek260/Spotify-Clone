@@ -23,7 +23,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmp-qu-PSL">
                                 <rect key="frame" x="0.0" y="0.0" width="293" height="185"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musicTemp" translatesAutoresizingMaskIntoConstraints="NO" id="BlS-MJ-lRU">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BlS-MJ-lRU">
                                         <rect key="frame" x="0.0" y="0.0" width="293" height="175"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="175" id="ZGV-yX-9ij"/>
@@ -76,11 +76,15 @@
                 <constraint firstAttribute="bottom" secondItem="86g-5n-70X" secondAttribute="bottom" id="p4F-lq-8YX"/>
             </constraints>
             <size key="customSize" width="293" height="286"/>
+            <connections>
+                <outlet property="imgView" destination="BlS-MJ-lRU" id="sN2-0T-2EG"/>
+                <outlet property="lblArtistName" destination="JFL-WQ-vyY" id="QwW-nt-ANh"/>
+                <outlet property="lblSongName" destination="MZ3-PT-b5n" id="Xbs-9M-kVA"/>
+            </connections>
             <point key="canvasLocation" x="28" y="26"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="musicIcon" width="37" height="37"/>
-        <image name="musicTemp" width="147" height="185"/>
     </resources>
 </document>

@@ -46,6 +46,7 @@
 		187DDF132CB536370021EBBA /* PlayListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DDF112CB536370021EBBA /* PlayListTableViewCell.swift */; };
 		187DDF142CB536370021EBBA /* PlayListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187DDF122CB536370021EBBA /* PlayListTableViewCell.xib */; };
 		187DDF162CB5405D0021EBBA /* PlayListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DDF152CB5405D0021EBBA /* PlayListModel.swift */; };
+		187DDF182CB557FB0021EBBA /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187DDF172CB557FB0021EBBA /* MusicModel.swift */; };
 		1889E3B32CAE6678004BBF12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889E3B22CAE6678004BBF12 /* AppDelegate.swift */; };
 		1889E3B52CAE6678004BBF12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889E3B42CAE6678004BBF12 /* SceneDelegate.swift */; };
 		1889E3BA2CAE6678004BBF12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1889E3B82CAE6678004BBF12 /* Main.storyboard */; };
@@ -107,6 +108,7 @@
 		187DDF112CB536370021EBBA /* PlayListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTableViewCell.swift; sourceTree = "<group>"; };
 		187DDF122CB536370021EBBA /* PlayListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListTableViewCell.xib; sourceTree = "<group>"; };
 		187DDF152CB5405D0021EBBA /* PlayListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListModel.swift; sourceTree = "<group>"; };
+		187DDF172CB557FB0021EBBA /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
 		1889E3AF2CAE6678004BBF12 /* SpotifyClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1889E3B22CAE6678004BBF12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1889E3B42CAE6678004BBF12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				1875857A2CB3C04C00D79781 /* SongModel.swift */,
+				187DDF172CB557FB0021EBBA /* MusicModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 				187DDF132CB536370021EBBA /* PlayListTableViewCell.swift in Sources */,
 				1889E3B52CAE6678004BBF12 /* SceneDelegate.swift in Sources */,
 				187585882CB3FB7000D79781 /* UIImage+Extension.swift in Sources */,
+				187DDF182CB557FB0021EBBA /* MusicModel.swift in Sources */,
 				187DDF162CB5405D0021EBBA /* PlayListModel.swift in Sources */,
 				1889E3ED2CAEC91F004BBF12 /* RegisterVC.swift in Sources */,
 				1870A2B22CAFC20A0039DCCB /* ImageConstants .swift in Sources */,

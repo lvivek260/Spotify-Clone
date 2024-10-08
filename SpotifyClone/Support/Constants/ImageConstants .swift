@@ -31,4 +31,6 @@ enum ImageConstants: String  {
     case search = "search"
     case menu = "menu"
     case profileImg = "Profileimg"
+    case musicTemp
+    case musicTemp1
 }

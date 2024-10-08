@@ -85,7 +85,7 @@ extension HomeVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView {
         case contentTitleCollection : return viewModel?.titles.count ?? 0
-        case musicCollectionView : return 10
+        case musicCollectionView : return viewModel?.musicData.count ?? 0
         default: return 0
         }
     }
@@ -103,6 +103,7 @@ extension HomeVC: UICollectionViewDataSource {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MusicCollectionCell.id, for: indexPath) as? MusicCollectionCell else {
                 return MusicCollectionCell()
             }
+            cell.musicData = viewModel?.musicData[indexPath.row]
             return cell
         default: return UICollectionViewCell()
         }

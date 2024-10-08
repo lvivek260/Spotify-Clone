@@ -40,7 +40,7 @@ class TabBarController: UITabBarController {
                           selectedImage: UIImage(name: .tabLikeSelected))
         profileVC.tabBarItem = .init(title: nil,
                                      image: UIImage(name: .tabProfileNotSelected),
-                                       tag: 3)
+                                     selectedImage: UIImage(systemName:"person.fill"))
         
         self.viewControllers = [homeVC, settingVC, likeVC, profileVC]
     }
