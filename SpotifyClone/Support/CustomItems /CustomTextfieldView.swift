@@ -33,6 +33,7 @@ class CustomTextfieldView: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         commitInit()
+        addGestureRecognizer()
     }
     
     private func commitInit(){
@@ -44,5 +45,16 @@ class CustomTextfieldView: UIView {
         containerView.layer.cornerRadius = 30.0
         containerView.layer.borderColor = UIColor.darkGray.cgColor
         containerView.layer.borderWidth = 1
+    }
+    
+    private func addGestureRecognizer() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTapOnView))
+        self.isUserInteractionEnabled = true
+        self.addGestureRecognizer(tap)
+    }
+    
+    @objc func didTapOnView() {
+        textfield.isEnabled = true
+        textfield.becomeFirstResponder()
     }
 }
