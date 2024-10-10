@@ -15,7 +15,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var musicListTableView: UITableView!
     @IBOutlet weak var musicListHeight: NSLayoutConstraint!
     
-    let selectionBarView = UIView()
+    private let selectionBarView = UIView()
     var viewModel: HomeViewModelProtocol?
     
 // MARK: - View Live Cycles

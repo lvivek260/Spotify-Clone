@@ -8,10 +8,18 @@
 import UIKit
 
 final class HomeBuilder {
-    func navigate() -> UIViewController {
+    
+    private var viewModel: HomeViewModelProtocol?
+    
+    func setViewModel(viewModel: HomeViewModelProtocol) -> HomeBuilder {
+        self.viewModel = viewModel
+        return self
+    }
+    
+    func build() -> UIViewController {
         let homeVC = HomeVC()
-        let viewModel = HomeViewModel()
-        homeVC.viewModel = viewModel
+        homeVC.viewModel = self.viewModel
         return homeVC
     }
+    
 }

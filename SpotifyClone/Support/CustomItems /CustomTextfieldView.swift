@@ -36,7 +36,7 @@ class CustomTextfieldView: UIView {
         addGestureRecognizer()
     }
     
-    private func commitInit(){
+    private func commitInit() {
         Bundle.main.loadNibNamed("CustomTextfieldView", owner: self,options: nil)
         addSubview(containerView)
         containerView.frame = self.bounds

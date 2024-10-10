@@ -32,7 +32,7 @@ class ProfileVC: UIViewController {
 // MARK: - Methods
     private func uiConfiguration() {
         self.title = "Profile"
-        self.view.overrideUserInterfaceStyle = .dark
+        self.overrideUserInterfaceStyle = .dark
     }
     
     private func tableViewSetup() {

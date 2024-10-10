@@ -24,10 +24,18 @@ class TabBarController: UITabBarController {
     }
     
     private func configureViewController() {
-        let homeVC = UINavigationController(rootViewController: HomeBuilder().navigate())
+        let homeVC = HomeBuilder()
+            .setViewModel(viewModel: HomeViewModel())
+            .build()
+        
+        let profileVC = ProfileBuilder()
+            .setViewModel(viewModel: ProfileViewModel())
+            .build()
+        
+        let homeNavigation = UINavigationController(rootViewController: homeVC)
         let settingVC = UINavigationController(rootViewController: SettingVC())
         let likeVC = UINavigationController(rootViewController: LikeVC())
-        let profileVC  = UINavigationController(rootViewController: ProfileBuilder().navigate())
+        let profileNavigation  = UINavigationController(rootViewController: profileVC)
         
         homeVC.tabBarItem = .init(title: nil,
                                   image: UIImage(name: .tabHomeNotSelected),
@@ -42,7 +50,7 @@ class TabBarController: UITabBarController {
                                      image: UIImage(name: .tabProfileNotSelected),
                                      selectedImage: UIImage(systemName:"person.fill"))
         
-        self.viewControllers = [homeVC, settingVC, likeVC, profileVC]
+        self.viewControllers = [homeNavigation, profileNavigation]
     }
  
 }
