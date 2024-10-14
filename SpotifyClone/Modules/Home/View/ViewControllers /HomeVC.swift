@@ -181,27 +181,3 @@ extension HomeVC: UITableViewDelegate {
         navigationController?.pushViewController(nowPlayingVC, animated: true)
     }
 }
-
-//extension HomeVC {
-//    private func setUpNavigationBar() {
-//        //Title Custom View
-//        let imageView = UIImageView(image: ImageConstants.spotifyIcon.image())
-//        imageView.contentMode = .scaleAspectFit
-//        self.navigationItem.titleView = imageView
-//
-//        // Assign the buttons to the navigation item
-//        let searchBtn = UIBarButtonItem(image: ImageConstants.search.image(), style: .done, target: self, action: #selector(didSearchBtnClick))
-//        self.navigationItem.leftBarButtonItem = searchBtn
-//
-//        let menuBtn = UIBarButtonItem(image: ImageConstants.menu.image(), style: .done, target: self, action: #selector(didMenuBtnClick))
-//        self.navigationItem.rightBarButtonItem = menuBtn
-//    }
-//
-//    @objc func didSearchBtnClick() {
-//        print(#function)
-//    }
-//
-//    @objc func didMenuBtnClick() {
-//        print(#function)
-//    }
-//}

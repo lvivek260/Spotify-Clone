@@ -30,6 +30,7 @@
 		1870A2B42CAFCB610039DCCB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1870A2B32CAFCB600039DCCB /* UIViewController+Extension.swift */; };
 		1871381B2CBCE5DB00966B84 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871381A2CBCE5DB00966B84 /* RegisterViewModel.swift */; };
 		187138202CBD22A600966B84 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871381F2CBD22A600966B84 /* SignInViewModel.swift */; };
+		187138222CBD2A9600966B84 /* NowPlayingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187138212CBD2A9600966B84 /* NowPlayingViewModel.swift */; };
 		187585792CB3BAE000D79781 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187585782CB3BAE000D79781 /* HomeBuilder.swift */; };
 		1875857B2CB3C04C00D79781 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875857A2CB3C04C00D79781 /* SongModel.swift */; };
 		1875857F2CB3D49A00D79781 /* ArtistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875857D2CB3D49A00D79781 /* ArtistVC.swift */; };
@@ -94,6 +95,7 @@
 		1870A2B32CAFCB600039DCCB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		1871381A2CBCE5DB00966B84 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		1871381F2CBD22A600966B84 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		187138212CBD2A9600966B84 /* NowPlayingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewModel.swift; sourceTree = "<group>"; };
 		187585782CB3BAE000D79781 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
 		1875857A2CB3C04C00D79781 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
 		1875857D2CB3D49A00D79781 /* ArtistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistVC.swift; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 			children = (
 				1875858C2CB402B700D79781 /* NowPlayingVC.swift */,
 				1875858D2CB402B700D79781 /* NowPlayingVC.xib */,
+				187138212CBD2A9600966B84 /* NowPlayingViewModel.swift */,
 			);
 			path = NowPlaying;
 			sourceTree = "<group>";
@@ -615,6 +618,7 @@
 				186E81312CB0053600D1FBED /* String+Extension.swift in Sources */,
 				1889E3D92CAE72F3004BBF12 /* OnboardingSecondVC.swift in Sources */,
 				187DDF022CB529120021EBBA /* ProfileViewModel.swift in Sources */,
+				187138222CBD2A9600966B84 /* NowPlayingViewModel.swift in Sources */,
 				1889E3E22CAE91D5004BBF12 /* SignInVC.swift in Sources */,
 				1875857F2CB3D49A00D79781 /* ArtistVC.swift in Sources */,
 				187585862CB3F2E900D79781 /* UIColor+Extension.swift in Sources */,
@@ -777,6 +781,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -813,6 +818,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NowPlayingVC" customModule="SpotifyClone" customModuleProvider="target">
             <connections>
+                <outlet property="topConstraint" destination="mOc-2e-ITw" id="cIV-iB-DlY"/>
+                <outlet property="vStack" destination="1Uc-io-45R" id="HrK-YR-XlA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
