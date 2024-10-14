@@ -9,25 +9,25 @@ import UIKit
 
 class SignInVC: UIViewController {
 
+// MARK: - IBOutlets
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet var heightConstraints: [NSLayoutConstraint]!
     
+    private var viewModel: SignInViewModelProtocol = SignInViewModel()
+    
+// MARK: - View Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        uiSetup()
+        viewModelSetup()
     }
-
     
-    private func uiSetup() {
-        let deviceSize = DeviceHelper.getMobileDeviceSizeCategory()
-        if deviceSize == .small {
-            topConstraint.constant = 20.0
-            heightConstraints.forEach { constraint in
-                constraint.constant = 60
-            }
-        }
+// MARK: - Configurations Methods
+    private func viewModelSetup() {
+        viewModel.signInVC = self
+        viewModel.checkDevice()
     }
 
+// MARK: - IBActions
     @IBAction func didBackBtnClick(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -38,5 +38,14 @@ class SignInVC: UIViewController {
             window.makeKeyAndVisible()
         }
     }
-    
+}
+
+// MARK: - DeviceSmallProtocol Methods
+extension SignInVC: DeviceSmallProtocol {
+    func ifDeviceIsSmall() {
+        topConstraint.constant = 20.0
+        heightConstraints.forEach { constraint in
+            constraint.constant = 60
+        }
+    }
 }

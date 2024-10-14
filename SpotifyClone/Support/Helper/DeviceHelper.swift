@@ -6,7 +6,14 @@
 //
 import UIKit
 
+protocol DeviceSmallProtocol {
+    func ifDeviceIsSmall()
+}
+
 class DeviceHelper {
+    
+    static let shared = DeviceHelper()
+    private init() {}
 
     // Enum to categorize device sizes
     enum DeviceSizeCategory {
@@ -14,7 +21,7 @@ class DeviceHelper {
     }
 
     // Function to get the device size category
-    static func getMobileDeviceSizeCategory() -> DeviceSizeCategory {
+    func getMobileDeviceSizeCategory() -> DeviceSizeCategory {
         let screenSizeInInches = getDeviceScreenSizeInInches()
         
         switch screenSizeInInches {
@@ -28,7 +35,7 @@ class DeviceHelper {
     }
 
     // Helper function to calculate the screen size in inches
-    private static func getDeviceScreenSizeInInches() -> CGFloat {
+    private func getDeviceScreenSizeInInches() -> CGFloat {
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
