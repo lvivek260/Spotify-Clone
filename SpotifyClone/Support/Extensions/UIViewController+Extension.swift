@@ -15,4 +15,16 @@ extension UIViewController {
         return window
     }
     
+    func showAlert(title: String?,
+                   message: String?,
+                   handler: (() -> Void)? = nil) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okey = UIAlertAction(title: "Ok", style: .default) { _ in
+            handler?()
+        }
+        alert.addAction(okey)
+        present(alert, animated: true)
+    }
+    
 }
