@@ -31,4 +31,4 @@ To get this project running on your local machine:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/Spotify-Clone.git
+   git clone https://github.com/lvivek260/Spotify-Clone.git
