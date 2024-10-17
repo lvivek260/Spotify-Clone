@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let firstOnboardingScreen = OnboardingFirstVC()
         let navigation = UINavigationController(rootViewController: firstOnboardingScreen)
         navigation.isNavigationBarHidden = true
-        window?.rootViewController = TabBarController()
+        window?.rootViewController = navigation
         window?.makeKeyAndVisible()
     }
 

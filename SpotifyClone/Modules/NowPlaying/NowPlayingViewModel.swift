@@ -18,7 +18,6 @@ final class NowPlayingViewModel: NowPlayingViewModelProtocol {
     
     var nowPlayingVC: NowPlayingVCProtocol?
     private let deviceHelper = DeviceHelper.shared
-    
     let title: String = "Now Playing"
     
     func checkDeviceSize() {
